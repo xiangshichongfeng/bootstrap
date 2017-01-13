@@ -1,0 +1,255 @@
+/*头部区域*/
+body {
+    font: 400 12px/1.5 "microsoft yahei";
+}
+
+.wjsHeader {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #888;
+}
+
+.wjsHeader > .container > .row > div {
+    border-right: 1px solid #ccc;
+    position: relative;
+}
+
+.col-md-2 {
+    position: relative;
+}
+
+.col-md-2 .erweima {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 12;
+    display: none;
+}
+
+.col-md-2:hover img {
+    display: block;
+}
+
+.col-md-2 div:nth-child(1):hover img {
+    display: block;
+}
+
+.wjsHeader > .container > .row > div:last-child {
+    border-right: none;
+}
+
+.wjsHeader > .container > .row > div a.btn-login {
+    padding: 2px 8px;
+    color: #ffffff;
+}
+
+.wjsHeader > .container > .row > div a {
+    color: #888;
+}
+
+/*导航部分*/
+.wjs_nav {
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.wjs_nav .navbar-default {
+    background-color: #fff;
+}
+
+.wjs_nav .navbar-default .navbar-brand {
+    height: 80px;
+    line-height: 50px;
+}
+
+.wjs_nav .navbar {
+    margin-bottom: 0;
+}
+
+.wjs_nav .navbar-default .navbar-nav li a {
+    height: 80px;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+}
+
+.wjs_nav .navbar-default .navbar-nav li.active a {
+    border-bottom: 2px solid #E92322;
+}
+
+.wjs_nav .navbar-default .navbar-nav li a:hover {
+    background-color: #fff;
+    border-bottom: 2px solid #E92322;
+}
+
+/*轮播*/
+.wjsSlide > .carousel > .carousel-inner > .item a {
+    display: block;
+    height: 410px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.ul_wrap{
+    width: 100%;
+}
+
+/*特色服务*/
+.wjs_tese {
+    padding-top: 50px;
+    background-color: #fff;
+}
+
+/*立即预约部分*/
+.righnow {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+}
+
+/*产品列表*/
+.product {
+    padding-top: 50px;
+    background-color: #F0F0F0;
+}
+
+.product .nav-tabs > li > a {
+    font-size: 16px;
+    color: #555;
+}
+
+.product .nav-tabs > li.active > a {
+    background-color: transparent;
+    color: #555;
+    border: none;
+    border-bottom: 2px solid #E92322;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.productItem {
+    margin-bottom: 20px;
+    background-color: #fff;
+    /*overflow: hidden;*/
+}
+
+.productItem.active {
+    background-color: #E92322;
+    color: #fff;
+}
+
+.productItemL {
+    margin-right: 120px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    /*这里给over的原因是h标签会有默认的行高，会将盒子撑大，将这个加上可以避免*/
+}
+
+.productItemL h4 {
+    padd-top: 20px;
+    text-indent: 15px;
+}
+
+.productItemL > div > p {
+    margin-bottom: 4px;
+}
+
+.productItem .productItemR {
+    float: right;
+    width: 120px;
+    height: 160px;
+    /*background-color: red;*/
+    position: relative;
+    border-left: 1px dashed #ccc;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 16px;
+}
+
+.productItem .productItemR::before, .productItem .productItemR::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    /*margin-left: -5px;*/
+    top: -10px;
+}
+
+.productItem .productItemR::after {
+    top: auto;
+    bottom: -10px;
+}
+
+.product_tips {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.product_tips button {
+    padding: 2px 4px;
+}
+
+/*全部新闻*/
+.wjs_news{
+    background-color: #fff;
+    padding: 50px 0;
+}
+.wjs_news .all_news{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px dashed #ccc;
+    position: relative;
+}
+.wjs_news .all_news::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    background-color: #fff;
+}
+.wjs_news .nav-pills > li {
+    margin-bottom: 20px;
+}
+.wjs_news .nav-pills > li > a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+@media (max-width:789px) {
+    .wjs_news .nav-pills > li{
+        float: left;
+        width: 25%;
+    }
+}
+
+
+
+
+

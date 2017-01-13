@@ -1,0 +1,81 @@
+/*声明字体*/
+@font-face {
+    font-family: "weijinsuo";
+    src: url("../font/MiFie-Web-Font.eot") format('embedded-opentype'),
+    url(../font/MiFie-Web-Font.svg) format('svg'),
+    url(../font/MiFie-Web-Font.ttf) format('truetype'),
+    url(../font/MiFie-Web-Font.woff) format('woff')
+}
+.wjsIcons{
+    font-family: "weijinsuo";
+    font-size: 12px;
+}
+.phone:before{
+    content:"\e908";
+}
+.tel:before{
+    content: "\e909";
+}
+.log1:before{
+    content: "\e920";
+    color: #E92322;
+    font-size: 48px;
+    vertical-align: middle;
+}
+.log2:before{
+    content: "\e93e";
+    vertical-align: middle;
+    font-size: 36px;
+}
+
+.tiyan::before{
+    content:"\e915";
+    position:absolute;
+    top: -15px;
+    left: 0;
+    font-size: 50px;
+}
+.qian_icons::before{
+    content:"\e907";
+    font-size: 40px;
+    color:#000000!important;
+}
+.clock::before{
+    content:"\e906";
+    font-size: 16px;
+}
+.video::before{
+    content:"\e905";
+    font-size: 16px;
+}
+.qiu_icons::before{
+    content: "\e90e";
+    font-size: 30px;
+}
+.news_icons::before{
+    content: "\e90f";
+    font-size: 30px;
+}
+.talk_icons::before{
+    content: "\e910";
+    font-size: 30px;
+}
+.pc_icons::before{
+    content: "\e911";
+    font-size: 30px;
+}
+.mt_20{
+    margin-top: 20px!important;
+}
+.mt_10{
+    margin-top: 10px!important;
+}
+.fz_30{
+    font-size: 30px;
+}
+.fw_700{
+    font-weight: 700;
+}
+.fz_16{
+    font-size: 16px;
+}
